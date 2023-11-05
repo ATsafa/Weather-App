@@ -4,11 +4,12 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
 body {
-  background-image: url(./../img/bg-.jpg);
+  background-image: url('../img/bg-.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
 .card {
   width: 80%;
   max-width: 470px;
@@ -19,14 +20,12 @@ body {
   padding: 40px 66px;
   text-align: center;
 }
-
 .search {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .search input {
   border: 0;
   outline: 0;
@@ -37,7 +36,6 @@ body {
   margin-right: 16px;
   height: 50px;
 }
-
 .search button {
   border: 0;
   outline: 0;
@@ -47,29 +45,23 @@ body {
   height: 50px;
   cursor: pointer;
 }
-
 .search button img {
   width: 16px;
 }
-
 .weather .info {
   color: #fff;
   padding: 20px;
   line-height: 2rem;
   border-radius: 10px;
   background-color: #eff1f3;
-  /* display: none; */
-  background: linear-gradient(to top,
-      #da1e4e,
-      #e4603a);
+  display: none;
+  background: linear-gradient(to top, #da1e4e, #e4603a);
 }
-
 .weather .info .city {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 40px;
 }
-
 .weather .info .temp {
   font-size: 5rem;
   font-weight: 700;
@@ -79,9 +71,8 @@ body {
   justify-content: center;
   text-align: center;
 }
-.weather .info .description .W-icon{
-  width: 150px;
-  height: 150px;
+.weather .info .description .W-icon {
+  padding: 100px;
 }
 .weather .info .description .d-info {
   display: flex;
